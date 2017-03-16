@@ -1,0 +1,16 @@
+#login-container {
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#login-container h1 {
+  margin: 0 0 10px;
+  font-size: 100px;
+  color: #6C7A89;
+}
