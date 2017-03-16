@@ -34,3 +34,5 @@ Navigate to `localhost:8000` in a browser to see it in action.
 # Database setup #
 The application uses PostgreSQL to store all user and image data.
 All tables are created automatically when the server is run for the first time.
+The connection details will need to be updated in `/modules/db.js` to connect to your own database.
+Additionally, image uploads are sent to S3. Details for those HTTP POST requests will also need to be changed in `/public/js/services/ImagesService.js`.
