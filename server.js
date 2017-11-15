@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8081;
 
 // DB Setup
 // =============================
@@ -39,4 +39,4 @@ app.get("/*", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(8000);
+app.listen(port);
